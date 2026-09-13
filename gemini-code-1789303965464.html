@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manga Dental | مستلزمات وتجهيز عيادات الأسنان</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#064e58;--secondary:#087b88;--accent:#d0a63c;--bg:#f4f7f6;--text:#173b43;--card-bg:#ffffff}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{font-family:Cairo,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.top-bar{background:#04333b;color:#fff;padding:10px 6%;font-size:13px;display:flex;justify-content:space-between;align-items:center}
+nav{background:var(--card-bg);padding:15px 6%;display:flex;align-items:center;justify-content:space-between;box-shadow:0 4px 20px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100}
+.logo{font-size:26px;font-weight:800;color:var(--primary)}.logo span{color:var(--accent)}
+.links{display:flex;gap:22px;align-items:center}.links a{font-weight:600;font-size:14px;transition:0.3s}.links a:hover{color:var(--secondary)}
+.search-box{border:1px solid #dce7e9;border-radius:12px;padding:8px 14px;width:200px;background:#fafcfc;font-family:inherit}
+.hero{padding:80px 6%;background:linear-gradient(135deg,#e1f3f5, #ffffff 60%);display:flex;align-items:center;justify-content:space-between;min-height:500px}
+.hero-text{max-width:620px}.badge{display:inline-block;background:#d2edf0;color:var(--primary);padding:6px 16px;border-radius:30px;font-size:13px;font-weight:700;margin-bottom:20px}
+h1{font-size:44px;line-height:1.2;margin-bottom:20px;color:var(--primary)}h1 span{color:var(--secondary)}
+.hero p{color:#50656b;font-size:16px;margin-bottom:30px}
+.btn{display:inline-block;background:var(--secondary);color:white;padding:12px 28px;border-radius:10px;font-weight:700;transition:0.3s;box-shadow:0 4px 15px rgba(8,123,136,0.3)}.btn:hover{opacity:0.9;transform:translateY(-2px)}
+.btn.alt{background:#fff;color:var(--secondary);border:2px solid var(--secondary);box-shadow:none}
+.hero-card{width:380px;height:320px;border-radius:30px;background:linear-gradient(145deg,var(--primary),var(--secondary));display:flex;align-items:center;justify-content:center;font-size:110px;box-shadow:0 20px 40px rgba(6,78,88,0.2);color:#fff}
+section{padding:70px 6%}.section-head{text-align:center;margin-bottom:40px}.section-head h2{font-size:32px;color:var(--primary)}.section-head p{color:#6c8288;margin-top:8px;font-size:15px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--card-bg);padding:25px;border-radius:16px;border:1px solid #e5eeee;text-align:center;transition:0.3s}.card:hover{transform:translateY(-5px);box-shadow:0 12px 30px rgba(0,0,0,0.06)}
+.card-icon{font-size:40px;margin-bottom:15px}
+.card h3{font-size:17px;color:var(--primary);margin-bottom:8px}
+.card p{font-size:13px;color:#7b8e93}
+.product-card{background:var(--card-bg);border-radius:16px;overflow:hidden;border:1px solid #e5eeee;transition:0.3s}.product-card:hover{box-shadow:0 10px 25px rgba(0,0,0,0.07)}
+.product-pic{height:170px;background:#f0f6f7;display:flex;align-items:center;justify-content:center;font-size:65px}
+.product-info{padding:18px}
+.product-brand{font-size:11px;color:var(--secondary);font-weight:700;text-transform:uppercase}
+.product-info h3{font-size:15px;margin:5px 0 10px;color:var(--primary)}
+.price-row{display:flex;justify-content:space-between;align-items:center;margin-top:15px}
+.price{font-weight:800;font-size:16px;color:var(--primary)}
+.quote-btn{background:#eaf7f7;color:var(--secondary);border:0;border-radius:8px;padding:8px 12px;font-weight:700;font-size:12px;cursor:pointer;transition:0.3s}.quote-btn:hover{background:var(--secondary);color:#fff}
+.features-section{background:#eef5f5;border-radius:24px;padding:50px;margin:20px 6%;display:grid;grid-template-columns:repeat(3,1fr);gap:30px;text-align:center}
+.feature-box h3{color:var(--primary);margin-bottom:10px;font-size:18px}
+.feature-box p{color:#586e73;font-size:14px}
+.brands-grid{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
+.brand-box{background:var(--card-bg);border:1px solid #e5eeee;padding:20px 35px;border-radius:12px;font-weight:800;color:#50656b;box-shadow:0 2px 10px rgba(0,0,0,0.02)}
+.whatsapp-float{position:fixed;bottom:25px;left:25px;background:#25d366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;box-shadow:0 6px 20px rgba(37,211,102,0.4);z-index:1000;transition:0.3s}.whatsapp-float:hover{transform:scale(1.1)}
+footer{background:#032930;color:#cbdadcd9;padding:60px 6% 30px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+.footer-title{font-size:18px;font-weight:800;color:#fff;margin-bottom:15px}
+.footer-col p,.footer-col a{display:block;color:#9fb6bc;font-size:13px;margin:10px 0;transition:0.3s}.footer-col a:hover{color:#fff}
+@media(max-width:900px){.links{display:none}.hero{flex-direction:column;text-align:center;gap:40px}.hero-card{width:280px;height:240px;font-size:80px}h1{font-size:32px}.grid-4,.features-section,footer{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<a href="https://wa.me/201500576313" class="whatsapp-float" target="_blank" title="تواصل عبر واتساب">💬</a>
+
+<div class="top-bar">
+  <span>🚚 توريد وشحن سريع لجميع عيادات ومراكز الجمهورية</span>
+  <span>📞 خدمة العملاء والمبيعات: 01500576313</span>
+</div>
+
+<nav>
+  <div class="logo">Manga<span>Dental</span></div>
+  <div class="links">
+    <a href="#">الرئيسية</a>
+    <a href="#categories">الأقسام</a>
+    <a href="#equipment">الأجهزة</a>
+    <a href="#products">المنتجات</a>
+    <a href="#why-us">لماذا نحن</a>
+    <a href="#contact">اتصل بنا</a>
+  </div>
+  <input class="search-box" placeholder="🔍 بحث عن معد أو مادة...">
+</nav>
+
+<header class="hero">
+ <div class="hero-text">
+  <div class="badge">شريكك المعتمد لتجهيز عيادات الأسنان</div>
+  <h1>معايير عالمية لتجهيز<br><span>عيادتك بأحدث التقنيات</span></h1>
+  <p>نقدم حلولاً متكاملة من أجهزة الأسنان الكبرى، مواد الحشو والترميم، وأدوات التعقيم بأعلى مواصفات الجودة الطبية وبأسعار تنافسية.</p>
+  <a class="btn" href="#products">تصفح المنتجات الاحترافية</a>
+  <a class="btn alt" href="https://wa.me/201500576313" target="_blank">اطلب عرض سعر</a>
+ </div>
+ <div class="hero-card">🦷</div>
+</header>
+
+<section id="categories">
+ <div class="section-head">
+  <h2>تصنيفات عيادات الأسنان</h2>
+  <p>كل ما تحتاجه العيادات والمراكز التخصصية وطلاب الأسنان</p>
+ </div>
+ <div class="grid-4">
+  <div class="card"><div class="card-icon">💺</div><h3>Dental Units & Chairs</h3><p>وحدات وكراسي الأسنان المتطورة</p></div>
+  <div class="card"><div class="card-icon">🔬</div><h3>Endodontics</h3><p>أجهزة ومستلزمات علاج الجذور</p></div>
+  <div class="card"><div class="card-icon">🦷</div><h3>Composites & Restoratives</h3><p>مواد الحشو والترميرات التجميلية</p></div>
+  <div class="card"><div class="card-icon">⚡</div><h3>Curing & X-Ray</h3><p>أجهزة الأشعة وكشافات الضوء</p></div>
+  <div class="card"><div class="card-icon">🧤</div><h3>Infection Control</h3><p>مستلزمات مكافحة العدوى والتعقيم</p></div>
+  <div class="card"><div class="card-icon">🧰</div><h3>Surgical Instruments</h3><p>أدوات الجراحات الدقيقة</p></div>
+  <div class="card"><div class="card-icon">😁</div><h3>Orthodontics</h3><p>مستلزمات وتقويم الأسنان</p></div>
+  <div class="card"><div class="card-icon">🎓</div><h3>Student Kits</h3><p>مستلزمات طلاب كليات الأسنان</p></div>
+ </div>
+</section>
+
+<section class="features-section" id="why-us">
+  <div class="feature-box"><h3>🛡️ جودة أصلية 100%</h3><p>نعمل مع أشهر الماركات العالمية لضمان كفاءة وأمان أجهزة ومواد عيادتك.</p></div>
+  <div class="feature-box"><h3>🚀 شحن وتوريد سريع</h3><p>فريق لوجستي متخصص لتوصيل وتركيب الأجهزة في أسرع وقت بجميع المحافظات.</p></div>
+  <div class="feature-box"><h3>💡 استشارات هندسية للعيادات</h3><p>دعم فني واستشاري متكامل لتصميم وتجهيز العيادات الجديدة بأفضل المعايير.</p></div>
+</section>
+
+<section id="products">
+ <div class="section-head">
+  <h2>منتجات مميزة لعيادتك</h2>
+  <p>مجموعة مختارة بعناية لأكثر المنتجات طلباً واعتماداً في السوق الطبي</p>
+ </div>
+ <div class="grid-4">
+  <div class="product-card">
+    <div class="product-pic">💺</div>
+    <div class="product-info">
+      <span class="product-brand">Manga Dental</span>
+      <h3>Advanced Dental Unit Pro</h3>
+      <div class="price-row"><span class="price">طلب عرض سعر</span><a href="https://wa.me/201500576313?text=استفسار%20عن%20Advanced%20Dental%20Unit%20Pro" class="quote-btn" target="_blank">استفسر</a></div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-pic">🧪</div>
+    <div class="product-info">
+      <span class="product-brand">3M / GC</span>
+      <h3>Composite Restorative Kit</h3>
+      <div class="price-row"><span class="price">1,250 ج.م</span><a href="https://wa.me/201500576313?text=طلب%20Composite%20Restorative%20Kit" class="quote-btn" target="_blank">اطلب الآن</a></div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-pic">🔬</div>
+    <div class="product-info">
+      <span class="product-brand">WOODPECKER</span>
+      <h3>Endo Motor & Apex Locator</h3>
+      <div class="price-row"><span class="price">4,800 ج.م</span><a href="https://wa.me/201500576313?text=طلب%20Endo%20Motor" class="quote-btn" target="_blank">اطلب الآن</a></div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-pic">🧤</div>
+    <div class="product-info">
+      <span class="product-brand">SAFE DENT</span>
+      <h3>Infection Control Bundle</h3>
+      <div class="price-row"><span class="price">650 ج.م</span><a href="https://wa.me/201500576313?text=طلب%20Infection%20Control%20Bundle" class="quote-btn" target="_blank">اطلب الآن</a></div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<section id="brands">
+ <div class="section-head">
+  <h2>البراندات العالمية المعتمدة</h2>
+  <p>نوفر وككلاء وموزعين أشهر الماركات العالمية في طب الأسنان</p>
+ </div>
+ <div class="brands-grid">
+  <div class="brand-box">3M ESPE</div>
+  <div class="brand-box">Dentsply Sirona</div>
+  <div class="brand-box">GC Corporation</div>
+  <div class="brand-box">Ultradent</div>
+  <div class="brand-box">Woodpecker</div>
+  <div class="brand-box">NSK Dental</div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="section-head">
+  <h2>تواصل مع فريق المبيعات والتجهيز</h2>
+  <p>جاهزون لمساعدتك في اختيار أفضل المعدات وتجهيز عيادتك بالكامل</p>
+ </div>
+ <div style="text-align:center; display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
+  <a class="btn" href="https://wa.me/201500576313" target="_blank">💬 اطلب عبر واتساب مباشر</a>
+  <a class="btn alt" href="tel:01500576313">📞 اتصل هاتفياً بالمبيعات</a>
+ </div>
+</section>
+
+<footer>
+ <div>
+  <div class="footer-title">Manga Dental</div>
+  <p>الوجهة الاحترافية الأولى لتوريد وتجهيز عيادات ومراكز الأسنان بأحدث المعدات ومواد التشغيل المعتمدة عالمياً.</p>
+ </div>
+ <div class="footer-col">
+  <div class="footer-title">روابط سريعة</div>
+  <a href="#">الرئيسية</a>
+  <a href="#categories">الأقسام الطبية</a>
+  <a href="#products">المنتجات المميزة</a>
+  <a href="#why-us">مميزاتنا</a>
+ </div>
+ <div class="footer-col">
+  <div class="footer-title">الأقسام الأساسية</div>
+  <a href="#categories">كراسي الأسنان والأجهزة</a>
+  <a href="#categories">مواد الحشو والجذور</a>
+  <a href="#categories">مستلزمات التعقيم</a>
+ </div>
+ <div class="footer-col">
+  <div class="footer-title">بيانات التواصل</div>
+  <p>📞 01500576313</p>
+  <p>✉️ info@mangadental.com</p>
+  <p>📍 جمهورية مصر العربية</p>
+ </div>
+</footer>
+
+</body>
+</html>
